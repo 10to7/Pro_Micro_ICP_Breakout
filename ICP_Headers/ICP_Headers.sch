@@ -1,0 +1,258 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:10to7_arduino
+LIBS:10to7_connectors
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ICP header for Pro Micro"
+Date "28 May 2014"
+Rev "0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Pro_Micro U1
+U 1 1 538645DC
+P 4500 3000
+F 0 "U1" H 5000 1800 60  0000 C CNN
+F 1 "Pro_Micro" H 4200 4050 60  0000 C CNN
+F 2 "" H 4500 3000 60  0000 C CNN
+F 3 "" H 4500 3000 60  0000 C CNN
+	1    4500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 53864635
+P 5950 2200
+F 0 "SW1" H 6100 2310 50  0000 C CNN
+F 1 "SW_PUSH" H 5950 2120 50  0000 C CNN
+F 2 "" H 5950 2200 60  0000 C CNN
+F 3 "" H 5950 2200 60  0000 C CNN
+	1    5950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 53864649
+P 6350 2350
+F 0 "#PWR01" H 6350 2350 30  0001 C CNN
+F 1 "GND" H 6350 2280 30  0001 C CNN
+F 2 "" H 6350 2350 60  0000 C CNN
+F 3 "" H 6350 2350 60  0000 C CNN
+	1    6350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2600 5650 2900
+$Comp
+L GND #PWR02
+U 1 1 5386466B
+P 5650 2900
+F 0 "#PWR02" H 5650 2900 30  0001 C CNN
+F 1 "GND" H 5650 2830 30  0001 C CNN
+F 2 "" H 5650 2900 60  0000 C CNN
+F 3 "" H 5650 2900 60  0000 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2600 5650 2600
+Wire Wire Line
+	5350 2700 5650 2700
+Connection ~ 5650 2700
+Wire Wire Line
+	5350 2800 5650 2800
+Connection ~ 5650 2800
+Wire Wire Line
+	5350 2200 5650 2200
+Wire Wire Line
+	6250 2200 6350 2200
+Wire Wire Line
+	6350 2200 6350 2350
+$Comp
+L Atmel_ICP_Header U2
+U 1 1 53864812
+P 8250 3100
+F 0 "U2" H 8500 2800 60  0000 C CNN
+F 1 "Atmel_ICP_Header" H 8150 3400 60  0000 C CNN
+F 2 "" H 8300 2700 60  0000 C CNN
+F 3 "" H 8300 2700 60  0000 C CNN
+	1    8250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3000 9050 3000
+Wire Wire Line
+	9050 3000 9050 2900
+Wire Wire Line
+	8800 3200 9050 3200
+Wire Wire Line
+	9050 3200 9050 3300
+Wire Wire Line
+	8800 3100 9200 3100
+Wire Wire Line
+	7700 3000 7300 3000
+Wire Wire Line
+	7700 3100 7300 3100
+Wire Wire Line
+	7700 3200 7300 3200
+Text Label 7350 3000 0    60   ~ 0
+MISO
+Text Label 7350 3100 0    60   ~ 0
+SCK
+Text Label 7350 3200 0    60   ~ 0
+RST
+Text Label 8900 3100 0    60   ~ 0
+MOSI
+$Comp
+L GND #PWR03
+U 1 1 53864886
+P 9050 3300
+F 0 "#PWR03" H 9050 3300 30  0001 C CNN
+F 1 "GND" H 9050 3230 30  0001 C CNN
+F 2 "" H 9050 3300 60  0000 C CNN
+F 3 "" H 9050 3300 60  0000 C CNN
+	1    9050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 5386489A
+P 9050 2900
+F 0 "#PWR04" H 9050 3000 30  0001 C CNN
+F 1 "VCC" H 9050 3000 30  0000 C CNN
+F 2 "" H 9050 2900 60  0000 C CNN
+F 3 "" H 9050 2900 60  0000 C CNN
+	1    9050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 538648AE
+P 5500 2400
+F 0 "#PWR05" H 5500 2500 30  0001 C CNN
+F 1 "VCC" H 5500 2500 30  0000 C CNN
+F 2 "" H 5500 2400 60  0000 C CNN
+F 3 "" H 5500 2400 60  0000 C CNN
+	1    5500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2450 5500 2450
+Wire Wire Line
+	5500 2450 5500 2400
+Wire Wire Line
+	3600 3800 3300 3800
+Wire Wire Line
+	3600 3900 3300 3900
+Wire Wire Line
+	3600 4000 3300 4000
+Text Label 3350 3800 0    60   ~ 0
+MOSI
+Text Label 3350 3900 0    60   ~ 0
+MISO
+Text Label 3350 4000 0    60   ~ 0
+SCK
+Text Label 5450 2200 0    60   ~ 0
+RST
+NoConn ~ 5350 3200
+NoConn ~ 5350 3700
+NoConn ~ 5350 3800
+NoConn ~ 5350 3900
+NoConn ~ 5350 4000
+NoConn ~ 3600 3500
+NoConn ~ 3600 3400
+NoConn ~ 3600 3300
+NoConn ~ 3600 3200
+NoConn ~ 3600 3100
+NoConn ~ 3600 3000
+NoConn ~ 3600 2900
+NoConn ~ 3600 2650
+NoConn ~ 3600 2550
+NoConn ~ 3600 2350
+NoConn ~ 3600 2250
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 53864B76
+P 7250 1300
+F 0 "#FLG06" H 7250 1395 30  0001 C CNN
+F 1 "PWR_FLAG" H 7250 1480 30  0000 C CNN
+F 2 "" H 7250 1300 60  0000 C CNN
+F 3 "" H 7250 1300 60  0000 C CNN
+	1    7250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 53864B8A
+P 7600 1300
+F 0 "#FLG07" H 7600 1395 30  0001 C CNN
+F 1 "PWR_FLAG" H 7600 1480 30  0000 C CNN
+F 2 "" H 7600 1300 60  0000 C CNN
+F 3 "" H 7600 1300 60  0000 C CNN
+	1    7600 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 53864B9E
+P 7250 1450
+F 0 "#PWR08" H 7250 1450 30  0001 C CNN
+F 1 "GND" H 7250 1380 30  0001 C CNN
+F 2 "" H 7250 1450 60  0000 C CNN
+F 3 "" H 7250 1450 60  0000 C CNN
+	1    7250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 53864BB2
+P 7600 1200
+F 0 "#PWR09" H 7600 1300 30  0001 C CNN
+F 1 "VCC" H 7600 1300 30  0000 C CNN
+F 2 "" H 7600 1200 60  0000 C CNN
+F 3 "" H 7600 1200 60  0000 C CNN
+	1    7600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1450 7250 1300
+Wire Wire Line
+	7600 1300 7600 1200
+$EndSCHEMATC
